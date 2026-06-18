@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teju Tours — Guided Adventure Travel</title>
+    <meta
+      name="description"
+      content="Teju Tours plans small-group guided adventures — Himalayan treks, island escapes and cave expeditions — built around responsible, community-first travel."
+    />
+    <meta name="theme-color" content="#0E1116" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="manifest" href="img/site.webmanifest" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <!-- ====================== NAVBAR ====================== -->
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a class="nav__brand" href="#home">
+        <img src="img/mountain.png" alt="" width="34" height="34" class="nav__mark" />
+        <span class="nav__name">Teju<span>Tours</span></span>
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home" class="nav__link is-active">Home</a></li>
+        <li><a href="#events" class="nav__link">Trips</a></li>
+        <li><a href="#explore" class="nav__link">Explore</a></li>
+        <li><a href="#tours" class="nav__link">Tours</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#creator" class="nav__link">Creator</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Switch colour theme"
+          title="Switch theme"
+        >
+          <i class="fa-solid fa-moon theme-toggle__moon"></i>
+          <i class="fa-solid fa-sun theme-toggle__sun"></i>
+        </button>
+        <button
+          class="nav__burger"
+          id="navBurger"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ====================== HERO ====================== -->
+    <header class="hero" id="home">
+      <div class="hero__overlay"></div>
+      <div class="hero__inner">
+        <p class="eyebrow eyebrow--light">Guided adventure tours · Est. 2025</p>
+        <h1 class="hero__title">
+          Explore the <span class="shimmer">wild</span>,<br />
+          beautiful world.
+        </h1>
+        <p class="hero__lead">
+          Small-group treks, island escapes and cave expeditions —
+          designed by people who travel light and tread lightly.
+        </p>
+        <div class="hero__cta">
+          <a href="#events" class="btn btn--primary">Browse trips</a>
+          <a href="#contact" class="btn btn--ghost">Plan with us</a>
+        </div>
+
+        <ul class="hero__meta" aria-hidden="true">
+          <li><span>27°N</span> Himalaya</li>
+          <li><span>11°N</span> Andaman</li>
+          <li><span>10°N</span> Gasparee Caves</li>
+        </ul>
+      </div>
+      <a href="#events" class="hero__scroll" aria-label="Scroll to trips">
+        <span></span>
+      </a>
+    </header>
+
+    <!-- ====================== TRIPS / EVENTS ====================== -->
+    <section class="section" id="events">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">What's coming up</p>
+          <h2 class="section__title">Upcoming trips</h2>
+          <p class="section__sub">
+            Departures we're taking bookings for right now. Spaces are kept
+            small on purpose.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__media">
+              <img src="img/img1.jpg" alt="Snow-capped Himalayan peaks on the Everest trail" loading="lazy" />
+              <span class="card__tag">Nepal · 14 days</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Everest Base Camp Trek</h3>
+              <p class="card__text">
+                One of the most renowned routes on Earth — Sherpa villages,
+                glacier crossings and the long walk up to base camp.
+              </p>
+              <a href="#contact" class="link-arrow">See details <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d: 80ms">
+            <div class="card__media">
+              <img src="img/img2.jpg" alt="Hikers on a green guided walking trail" loading="lazy" />
+              <span class="card__tag">Europe · Flexible</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Walking Holidays</h3>
+              <p class="card__text">
+                Join a small guided group, take on a challenging trek, or book a
+                private walk shaped entirely around your pace.
+              </p>
+              <a href="#contact" class="link-arrow">See details <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d: 160ms">
+            <div class="card__media">
+              <img src="img/carousel-img2.jpg" alt="Clear turquoise water over coral near the Andaman coast" loading="lazy" />
+              <span class="card__tag">India · 7 days</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Andaman Beaches</h3>
+              <p class="card__text">
+                Dive one of the richest coral reef ecosystems in the world, then
+                surface to some of the quietest beaches in Asia.
+              </p>
+              <a href="#contact" class="link-arrow">See details <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== EXPLORE (parallax) ====================== -->
+    <section class="explore" id="explore">
+      <div class="explore__panel reveal">
+        <p class="eyebrow eyebrow--light">A note before you pack</p>
+        <h2 class="explore__quote">
+          “Travel makes one modest. You see what a tiny place you occupy in the
+          world.”
+        </h2>
+        <p class="explore__by">— Gustave Flaubert</p>
+        <a href="#tours" class="btn btn--primary">Find your route</a>
+      </div>
+    </section>
+
+    <!-- ====================== TOURS ====================== -->
+    <section class="section" id="tours">
+      <div class="container tours__grid">
+        <div class="tours__text">
+          <p class="eyebrow">On the calendar</p>
+          <h2 class="section__title section__title--left">
+            Upcoming tours &amp; destinations
+          </h2>
+          <ul class="schedule">
+            <li>
+              <span class="schedule__date">Wed · 28 Sep</span>
+              <span class="schedule__name">Mt. Everest tour &amp; Birdseye Fort view</span>
+            </li>
+            <li>
+              <span class="schedule__date">Sat · 01 Oct</span>
+              <span class="schedule__name">The Gasparee Caves</span>
+            </li>
+            <li>
+              <span class="schedule__date">Tue · 04 Oct</span>
+              <span class="schedule__name">Andaman North Coast experience</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Reserve a spot</a>
+        </div>
+
+        <div class="tours__gallery reveal">
+          <img src="img/img3.jpg" alt="Mountain landscape at dawn" loading="lazy" />
+          <img src="img/img4.jpg" alt="Coastal cliffs above the sea" loading="lazy" />
+          <img src="img/img5.jpg" alt="Forest trail winding through trees" loading="lazy" />
+          <img src="img/img6.jpg" alt="Open valley under a wide sky" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== ABOUT (company) ====================== -->
+    <section class="section" id="about">
+      <div class="container about__grid">
+        <div class="about__text">
+          <p class="eyebrow">About Teju Tours</p>
+          <h2 class="section__title section__title--left">
+            We plan the trip you'd plan for yourself.
+          </h2>
+          <p class="lead">
+            Teju Tours started with a simple idea: the best journeys are the
+            ones you'd put together for a close friend. We keep groups small,
+            partner with local guides, and leave room for the unplanned moments
+            that end up being your favourites.
+          </p>
+          <div class="about__stats">
+            <div><strong>40+</strong><span>routes mapped</span></div>
+            <div><strong>12</strong><span>local guide teams</span></div>
+            <div><strong>4.9</strong><span>average rating</span></div>
+          </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel reveal" id="carousel" aria-roledescription="carousel">
+          <div class="carousel__track" id="carouselTrack">
+            <figure class="carousel__slide is-active">
+              <img src="img/carousel-img4.jpg" alt="Traveller looking out over a mountain ridge" loading="lazy" />
+            </figure>
+            <figure class="carousel__slide">
+              <img src="img/carousel-img5.jpg" alt="A still lake reflecting the surrounding peaks" loading="lazy" />
+            </figure>
+            <figure class="carousel__slide">
+              <img src="img/carousel-img6.jpg" alt="Hikers crossing a high-altitude trail" loading="lazy" />
+            </figure>
+          </div>
+          <button class="carousel__btn carousel__btn--prev" id="carouselPrev" type="button" aria-label="Previous photo">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="carousel__btn carousel__btn--next" id="carouselNext" type="button" aria-label="Next photo">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Choose photo"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== ABOUT THE CREATOR ====================== -->
+    <section class="section creator" id="creator">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Behind the build</p>
+          <h2 class="section__title">Meet the creator</h2>
+        </div>
+
+        <div class="creator__card reveal">
+          <div class="creator__avatar" aria-hidden="true">
+            <span>SA</span>
+          </div>
+          <div class="creator__body">
+            <h3 class="creator__name">Sujan Anandh</h3>
+            <p class="creator__role">Front-end developer · UI enthusiast</p>
+            <p class="creator__bio">
+              Hi! I'm Sujan — I designed and coded Teju Tours as a front-end web
+              development project. I enjoy turning rough ideas into clean,
+              responsive interfaces, and I built this site to practise layout,
+              theming and interaction from scratch with just HTML, CSS and
+              vanilla JavaScript.
+            </p>
+            <ul class="creator__skills">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive design</li>
+              <li>UI / UX</li>
+            </ul>
+            <div class="creator__links">
+              <a href="https://github.com/SujanTheMagician" target="_blank" rel="noopener" class="chip">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="mailto:sujantours@adventure.com" class="chip">
+                <i class="fa-solid fa-envelope"></i> Email
+              </a>
+              <span class="chip chip--muted">
+                <i class="fa-solid fa-location-dot"></i> Chennai, India
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CONTRIBUTIONS ====================== -->
+    <section class="section" id="contribution">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">How we give back</p>
+          <h2 class="section__title">Our contributions</h2>
+        </div>
+
+        <div class="cards cards--3">
+          <article class="feature reveal">
+            <i class="fa-solid fa-leaf feature__icon"></i>
+            <h3>Eco-friendly tours</h3>
+            <p>
+              We're committed to sustainable tourism — trips designed to
+              minimise environmental impact while maximising community benefit.
+            </p>
+          </article>
+          <article class="feature reveal" style="--d: 80ms">
+            <i class="fa-solid fa-people-group feature__icon"></i>
+            <h3>Community engagement</h3>
+            <p>
+              We partner with local artisans and guides so your travel directly
+              supports the regions you explore.
+            </p>
+          </article>
+          <article class="feature reveal" style="--d: 160ms">
+            <i class="fa-solid fa-graduation-cap feature__icon"></i>
+            <h3>Educational programs</h3>
+            <p>
+              We host workshops and travel talks to encourage responsible travel
+              and genuine cultural respect.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CONTACT ====================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Say hello</p>
+          <h2 class="section__title">Contact us</h2>
+        </div>
+
+        <div class="contact__grid">
+          <form class="contact__form" id="contactForm" novalidate>
+            <h3 class="contact__formtitle">Send us a message</h3>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Traveller" required />
+                <small class="field__error" data-for="name"></small>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+                <small class="field__error" data-for="email"></small>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Japan">Japan</option>
+                <option value="France">France</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="remarks">Your message</label>
+              <textarea
+                id="remarks"
+                name="remarks"
+                placeholder="Tell us where you'd like to go…"
+                rows="5"
+                required
+              ></textarea>
+              <small class="field__error" data-for="remarks"></small>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Send message</button>
+            <p class="contact__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact__info">
+            <p class="contact__lead">
+              Prefer another way? Reach us directly using the details below.
+            </p>
+            <div class="contact__divider"></div>
+            <a class="contact__item" href="mailto:sujantours@adventure.com">
+              <i class="fa-solid fa-envelope"></i>
+              <span>sujantours@adventure.com</span>
+            </a>
+            <a class="contact__item" href="tel:+918438339737">
+              <i class="fa-solid fa-phone"></i>
+              <span>(+91) 84383 39737</span>
+            </a>
+            <span class="contact__item contact__item--static">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Chennai, Tamil Nadu, India</span>
+            </span>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a class="nav__brand" href="#home">
+            <img src="img/mountain.png" alt="" width="30" height="30" class="nav__mark" />
+            <span class="nav__name">Teju<span>Tours</span></span>
+          </a>
+          <p>Find that adventure. Small groups, local guides, lighter footprints.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Footer">
+          <h4>Explore</h4>
+          <a href="#events">Trips</a>
+          <a href="#tours">Tours</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <div class="footer__social">
+            <a href="https://github.com/SujanTheMagician" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:sujantours@adventure.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+918438339737" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <p>© <span id="year"></span> Teju Tours. Built by Sujan Anandh.</p>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
